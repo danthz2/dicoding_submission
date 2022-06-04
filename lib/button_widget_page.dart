@@ -8,8 +8,8 @@ class ButtonWidgetPage extends StatefulWidget {
 }
 
 class _ButtonWidgetPageState extends State<ButtonWidgetPage> {
-  int angka = 1;
-  double angkaSize = 15;
+  int _angka = 1;
+  double _angkaSize = 15;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,15 +41,15 @@ class _ButtonWidgetPageState extends State<ButtonWidgetPage> {
               height: 10,
             ),
             Text(
-              angka.toString(),
-              style: TextStyle(fontSize: angkaSize),
+              _angka.toString(),
+              style: TextStyle(fontSize: _angkaSize),
             ),
             Row(
               children: [
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
-                      angka++;
+                      _angka++;
                     });
                   },
                   child: Text("Tambah"),
@@ -57,7 +57,7 @@ class _ButtonWidgetPageState extends State<ButtonWidgetPage> {
                 OutlinedButton(
                   onPressed: () {
                     setState(() {
-                      angkaSize++;
+                      _angkaSize++;
                     });
                   },
                   child: Text("Perbesar"),
@@ -65,7 +65,7 @@ class _ButtonWidgetPageState extends State<ButtonWidgetPage> {
                 TextButton(
                   onPressed: () {
                     setState(() {
-                      angkaSize--;
+                      _angkaSize--;
                     });
                   },
                   child: Text("Perkecil"),

@@ -4,7 +4,7 @@ import 'package:dicoding_submission/text_widget_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  List<Map<String, dynamic>> widgetType = [
+  final List<Map<String, dynamic>> widgetType = [
     {'name': 'Text Widget', 'page': TextWidgetPage()},
     {'name': 'Switch Widget', 'page': SwitchWidgetPage()},
     {'name': 'Button Widget', 'page': ButtonWidgetPage()},
